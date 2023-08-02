@@ -1,0 +1,20 @@
+Script started on 2023-08-02 13:36:16+09:30 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="77" LINES="36"]
+ston0160@penguin:~$ docker container run -d nginx
+e091b187f52814facb3e6ec7e3ac9317a54fde9463a8201ec6fbfbf36257eed4
+ston0160@penguin:~$ docker container run -d nginx
+2d8a53219bd08314a43448154bca8e450c915f775b0c6cec501589dd81a9c849
+ston0160@penguin:~$ docker container run -d nginx
+4023f266ec853bbba3513ad65d75fc1dca33870adbeefa7da8a94dd5e0d2adfe
+dockerocontainer'stop-e0nginxntainer run -d nginx
+e0
+ston0160@penguin:~$ docker container stop 2d
+2d
+ston0160@penguin:~$ docker ps -a
+CONTAINER ID   IMAGE	 COMMAND		  CREATED	   STATUS		       PORTS	 NAMES
+4023f266ec85   nginx	 "/docker-entrypoint.…"	  39 seconds ago   Up 37 seconds	       80/tcp	 hardcore_mayer
+2d8a53219bd0   nginx	 "/docker-entrypoint.…"	  41 seconds ago   Exited (0) 7 seconds ago		 keen_pascal
+e091b187f528   nginx	 "/docker-entrypoint.…"	  44 seconds ago   Exited (0) 12 seconds ago		 clever_dewdney
+ston0160@penguin:~$ exit
+exit
+
+Script done on 2023-08-02 13:37:41+09:30 [COMMAND_EXIT_CODE="0"]

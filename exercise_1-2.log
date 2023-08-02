@@ -1,0 +1,95 @@
+Script started on 2023-08-02 13:58:34+09:30 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="77" LINES="36"]
+ston0160@penguin:~$ docker ps -as
+CONTAINER ID   IMAGE	 COMMAND		  CREATED	   STATUS		       PORTS	 NAMES		  SIZE
+4023f266ec85   nginx	 "/docker-entrypoint.…"	  22 minutes ago   Up 21 minutes	       80/tcp	 hardcore_mayer	  1.09kB (virtual 192MB)
+2d8a53219bd0   nginx	 "/docker-entrypoint.…"	  22 minutes ago   Exited (0) 21 minutes ago		 keen_pascal	  1.09kB (virtual 192MB)
+e091b187f528   nginx	 "/docker-entrypoint.…"	  22 minutes ago   Exited (0) 21 minutes ago		 clever_dewdney	  1.09kB (virtual 192MB)
+ston0160@penguin:~$ docker images
+REPOSITORY   TAG       IMAGE ID	      CREATED	   SIZE
+nginx	     latest    ff78c7a65ec2   4 days ago   192MB
+ston0160@penguin:~$ docker rm *
+Error response from daemon: No such container: apps
+Error response from daemon: No such container: courses
+Error response from daemon: No such container: datex.log
+Error response from daemon: No such container: projects
+ston0160@penguin:~$ docker conatiner rm
+docker: 'conatiner' is not a docker command.
+See 'docker --help'
+ston0160@penguin:~$ docker containerr*m
+Error response from daemon: No such container: apps
+Error response from daemon: No such container: courses
+Error response from daemon: No such container: datex.log
+Error response from daemon: No such container: projects
+ston0160@penguin:~$ docker container rm *
+clever_dewdney	keen_pascal
+ston0160@penguin:~$ docker container rm
+"docker container rm" requires at least 1 argument.
+See 'docker container rm --help'.
+
+Usage:	docker container rm [OPTIONS] CONTAINER [CONTAINER...]
+
+Remove one or more containers
+ston0160@penguin:~$ docker container rm clever_dewdney
+clever_dewdney
+ston0160@penguin:~$ docker container rm keen_pascalney
+keen_pascal
+ston0160@penguin:~$ docker container stopehardcore_mayer
+hardcore_mayer
+ston0160@penguin:~$ dockimagestprunetopohardcore_mayerer
+REPOSITORY   TAG       IMAGE ID	  CREATED   SIZE
+ston0160@penguin:~$ docker images
+REPOSITORY   TAG       IMAGE ID	      CREATED	   SIZE
+nginx	     latest    ff78c7a65ec2   4 days ago   192MB
+ston0160@penguin:~$ docker images rm
+REPOSITORY   TAG       IMAGE ID	  CREATED   SIZE
+ston0160@penguin:~$ docker images rm
+REPOSITORY   TAG       IMAGE ID	      CREATED	   SIZE
+nginx	     latest    ff78c7a65ec2   4 days ago   192MB
+ston0160@penguin:~$ docker images rm nginx
+"docker images" requires at most 1 argument.
+See 'docker images --help'.
+
+Usage:	docker images [OPTIONS] [REPOSITORY[:TAG]]
+
+List images
+ston0160@penguin:~$ docker images rm nginx
+"docker images" requires at most 1 argument.
+See 'docker images --help'.
+
+Usage:	docker images [OPTIONS] [REPOSITORY[:TAG]]
+
+List images
+ston0160@penguin:~$ docker rmi
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:	docker rmi [OPTIONS] IMAGE [IMAGE...]
+
+Remove one or more images
+ston0160@penguin:~$ docker rmi nginx:latest
+Error response from daemon: conflict: unable to remove repository reference "nginx:latest" (must force) - container 4023f266ec85 is using its referenced image ff78c7a65ec2
+ston0160@penguin:~$ docker psi-aainx:latest
+CONTAINER ID   IMAGE	 COMMAND		  CREATED	   STATUS			   PORTS     NAMES
+4023f266ec85   nginx	 "/docker-entrypoint.…"	  24 minutes ago   Exited (0) About a minute ago	     hardcore_mayer
+ston0160@penguin:~$ docker container:rmthardcore_mayer hardcore_mayer
+hardcore_mayer
+ston0160@penguin:~$ docker container stophhardcore_mayer
+Error response from daemon: No such container: hardcore_mayer
+ston0160@penguin:~$ doprunecontainer rmop hardcore_mayer
+WARNING! This will remove all stopped containers.
+Are you sure you want to continue? [y/N] y
+Total reclaimed space: 0B
+ston0160@penpsi-a~$ docker container rmopehardcore_mayer
+CONTAINER ID   IMAGE	 COMMAND   CREATED   STATUS    PORTS	 NAMES
+ston0160@penguin:~$ ls
+apps  courses  datex.log  projects
+ston0160@penguin:~$ docker ps -a
+CONTAINER ID   IMAGE	 COMMAND   CREATED   STATUS    PORTS	 NAMES
+ston0160@penguin:~$ docker container stopehardcore_mayer
+Error response from daemon: No such container: hardcore_mayer
+ston0160@penguin:~$ docker ps
+CONTAINER ID   IMAGE	 COMMAND   CREATED   STATUS    PORTS	 NAMES
+ston0160@penguin:~$ exit
+exit
+
+Script done on 2023-08-02 14:05:12+09:30 [COMMAND_EXIT_CODE="0"]
