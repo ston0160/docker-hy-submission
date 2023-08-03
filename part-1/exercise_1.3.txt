@@ -1,0 +1,9 @@
+richard@richard-Laptop:~$ sudo docker exec -it exercise-1-3 bash
+root@32c0bd2eb605:/usr/src/app# ls
+server  text.log
+root@32c0bd2eb605:/usr/src/app# tail -f ./text.log 
+2023-08-03 12:05:16 +0000 UTC
+2023-08-03 12:05:18 +0000 UTC
+2023-08-03 12:05:20 +0000 UTC
+2023-08-03 12:05:22 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
