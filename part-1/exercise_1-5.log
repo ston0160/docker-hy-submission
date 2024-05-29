@@ -1,0 +1,12 @@
+richard@asus-laptop:~$ docker run -d -it --rm --name devops_ubuntu devopsdockeruh/simple-web-service:ubuntu 
+6b9c7183e0ef78121790dc9837b0225e68d4d2832ac99a47a65bde298253274a
+richard@asus-laptop:~$ docker exec -it devops_ubuntu bash
+root@6b9c7183e0ef:/usr/src/app# tail -f ./text.log 
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+root@6b9c7183e0ef:/usr/src/app# exit
+exit
+richard@asus-laptop:~$ docker run -d -it --rm --name devops_alpine devopsdockeruh/simple-web-service:alpine
+92cdb441de5e88327cec49fd42dce5cd7385eca124d46561b0e64a06beccc7da
+richard@asus-laptop:~$ docker exec -it devops_alpine sh
+/usr/src/app # tail -f ./text.log 
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
