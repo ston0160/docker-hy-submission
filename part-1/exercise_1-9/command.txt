@@ -1,0 +1,5 @@
+mkdir logs
+cd logs
+touch text.log
+cd ..
+docker run -v "$(pwd)/logs/text.log:/usr/src/app/text.log" devopsdockeruh/simple-web-service
